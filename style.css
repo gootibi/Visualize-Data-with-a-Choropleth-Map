@@ -1,15 +1,95 @@
-html, body {
-    min-height: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+html, body{
+    min-height: 100%
 }
 
 body {
-    flex: content;
+    background-color: #212a16;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #e9faeb;
+    margin: none;
 }
 
-#canvas {
-    min-width: 1000px;
+svg{
+    background-color: #32a36b;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 15px rgba(143, 234, 166, 0.2)
+}
+
+#canvas{
     min-height: 600px;
+    min-width: 950px;
+}
+
+
+.county:hover{
+    fill: rgb(72, 45, 45)
+}
+
+g{
+    color: #e9faeb;
+}
+
+#tooltip{
+    visibility: hidden;
+    height: auto;
+    width: auto;
+    margin-top: 2px;
+    color: #e9faeb;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+#legend{
+    color: rgb(56, 58, 74);
+    font-size: 18px;
+    text-align: center;
+    min-height: 150px;
+    max-width: 180px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+#title{
+    font-size: 28px;
+    color: #e9faeb;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#description a{
+    text-decoration: none;
+    color: #ddf9e1;
+    text-align: center;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#rightSide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+}
+
+#footer{
+    font-size: 16px;
+    color: #e9faeb;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
